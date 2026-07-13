@@ -22,6 +22,8 @@ org_settings:
     #   • https://fleetdm.com/docs/configuration/yaml-files#org-info
     ###########################################################
     org_name: My org
+  fleet_desktop:
+    transparency_url: https://catofday.com/
 
   server_settings:
     ###########################################################
@@ -108,12 +110,11 @@ controls:
 
   ###########################################################
   # Uncomment when you are ready to start using Fleet's Windows MDM features.
-  # 
+  #
   # Read more:
   #   • https://fleetdm.com/guides/windows-mdm-setup
   ###########################################################
   # windows_enabled_and_configured: true
-
 
 ###########################################################
 # Labels are static or dynamic groupings of computers for
