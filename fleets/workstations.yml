@@ -51,7 +51,7 @@ controls:
   # Note: This requires activating MDM in your Fleet instance.
   #
   # For more, see:
-  #   • https://fleetdm.com/guides/apple-mdm-setup    
+  #   • https://fleetdm.com/guides/apple-mdm-setup
   #   • https://fleetdm.com/guides/windows-mdm-setup
   #   • https://fleetdm.com/docs/configuration/yaml-files#apple-settings-and-windows-settings
   #
@@ -63,12 +63,14 @@ controls:
   # - paths: ../platforms/windows/configuration-profiles/*.xml
   #   labels_include_all:
   #     - "x86-based Windows hosts"
-  # ```  
+  # ```
   ###########################################################
+  macos_updates:
+    deadline: "2026-07-30"
+    minimum_version: "26.4"
   apple_settings:
     configuration_profiles:
-      - paths: ../platforms/macos/declaration-profiles/*.json
-      - paths: ../platforms/macos/configuration-profiles/*.mobileconfig
+      - path: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
   windows_settings:
     configuration_profiles:
       - paths: ../platforms/windows/configuration-profiles/*.xml
